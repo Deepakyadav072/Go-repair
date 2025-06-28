@@ -1,0 +1,35 @@
+npm install
+
+node server.js
+
+new collection > body > raw > {
+                                
+  "_id": "665123abcdfe567890123456",           // MongoDB auto-generated _id
+  "id": "tech001",                             // Custom technician ID
+  "name": "Rajesh Kumar",
+  "email": "rajesh.kumar@example.com",
+  "phone": "9876543210",
+  "gender": "Male",
+  "address_street": "123 Main Road",
+  "address_city": "Delhi",
+  "address_pincode": "110001",
+  "location_city": "Delhi",
+  "location_region": "North",
+  "availability": "Available",
+  "isAvailable": true,
+  "joined_at": "2025-06-27T10:30:00.000Z",
+  "last_active_at": "2025-06-27T13:45:00.000Z",
+  "partner_id": "6650fac3210abc4567891234",    // Reference to Partner document
+  "user_id": "6650fac3210abc4567899999",       // Reference to User document
+  "expertise": "Plumbing",
+  "createdAt": "2025-06-27T10:30:00.000Z",
+  "updatedAt": "2025-06-27T13:45:00.000Z",
+  "__v": 0
+}
+
+                              
+
+POST > http://localhost:5000/api/technicians
+
+http://localhost:5000/createTechnician
+http://localhost:5000/getAllTechnicians
